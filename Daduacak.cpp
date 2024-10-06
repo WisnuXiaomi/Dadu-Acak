@@ -34,7 +34,10 @@ int main(){
         cout << daduopsi2(0,0) << endl;
         break;
         case '3':
-        cout << "Terimakasih" << endl;
+        cout <<"\t" "Terimakasih" << endl;
+        break;
+        default :
+        cout << "Pilih Opsi yang Benar" << endl;
         break;
         }
         cin.ignore();
