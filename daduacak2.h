@@ -3,7 +3,7 @@
 #include <ctime>
 using namespace std;
 
-string dadu(int jumlahp1, int jumlahp2) {
+string daduopsi2(int jumlahp1, int jumlahp2) {
     string player1, player2;
     int hasilp1 = 0, hasilp2 = 0;
     int i = 0;
@@ -17,7 +17,6 @@ string dadu(int jumlahp1, int jumlahp2) {
     cin.ignore();
     cout << endl << endl;
 
-    srand(time(0));
 
     while (true) {
         if (i % 2 == 0) {
@@ -30,7 +29,7 @@ string dadu(int jumlahp1, int jumlahp2) {
             hasilp1 += jumlahp1;
             cout << "Total Skor " << player1 << ": " << hasilp1 << endl << endl;
 
-            if (hasilp1 > 20) {
+            if (hasilp1 > 50) {
                 cout << player1 << " Menang!" << endl;
                 break;
             }
@@ -44,7 +43,7 @@ string dadu(int jumlahp1, int jumlahp2) {
             hasilp2 += jumlahp2;
             cout << "Total Skor " << player2 << ": " << hasilp2 << endl << endl;
 
-            if (hasilp2 > 20) {
+            if (hasilp2 > 50) {
                 cout << player2 << " Menang!" << endl;
                 break;
             }
@@ -52,9 +51,4 @@ string dadu(int jumlahp1, int jumlahp2) {
         i++;
     }
     return "Selamat anda Memenangkan Permainan!!";
-}
-
-int main() {
-    dadu(0, 0);
-    return 0;
 }
